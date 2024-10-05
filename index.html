@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Travel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explore the World with Our Packages</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Your Ultimate Travel Experience</h2>
+        <p>Discover the best travel packages for all your needs. Taxi bookings, hotel reservations, and document management all in one place!</p>
+    </section>
+
+    <section id="packages">
+        <h2>Available Packages</h2>
+        <div id="packageList"></div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Package</h2>
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="package">Select Package:</label>
+            <select id="package" name="package" required></select>
+
+            <label for="taxi">Taxi Booking:</label>
+            <input type="checkbox" id="taxi" name="taxi"> Yes
+
+            <label for="hotel">Hotel Booking:</label>
+            <input type="checkbox" id="hotel" name="hotel"> Yes
+
+            <label for="documents">Document Management:</label>
+            <input type="checkbox" id="documents" name="documents"> Yes
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@travelwebsite.com</p>
+        <p>Phone: +9866412176</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tourist Travel Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
